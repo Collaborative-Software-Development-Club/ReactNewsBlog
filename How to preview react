@@ -1,0 +1,7 @@
+1. Make sure the command directory is the folder you are working in
+  For me it was: /Users/parkerhaskett/CSDCWebsite/NewsBlogProject/ReactNewsBlog/react-news-blog
+
+2. Go to the terminal and write npm start
+
+3. The window should open in your browser, displaying the index.js file
+
