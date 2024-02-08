@@ -1,8 +1,9 @@
 import './App.css';
+import MainPage from './layouts/MainPage'
 
 function App() {
   return (
-    <p>Hello World</p>
+    <MainPage />
   );
 }
 
