@@ -1,13 +1,23 @@
-import React from 'react'
-import CreatePost from './CreatePost.jsx'
-import Feed from './Feed.jsx'
+import React from "react";
+import CreatePost from "./CreatePost.jsx";
+import BlogPost from "./BlogPost.jsx"
+
+import useData from '../../data/useData.js'
 
 const MainPage = () => {
-  return (<>
-    <p>This is the main page</p>
-    <CreatePost />
-    <Feed />
-    </>)
-}
 
-export default MainPage
+    const [posts, uploadPost] = useData();
+    console.log("main page", posts)
+    
+	return (
+		<>
+			<h1>CSDC Blog</h1>
+			<h2>Write a post</h2>
+			<CreatePost uploadPost={uploadPost}/>
+			<h2>Feed</h2>
+            {posts.map(post => <BlogPost postData={post}/>)}
+		</>
+	);
+};
+
+export default MainPage;

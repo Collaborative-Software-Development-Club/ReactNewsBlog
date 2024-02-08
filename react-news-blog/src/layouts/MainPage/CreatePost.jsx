@@ -1,8 +1,8 @@
 import React from 'react'
 
-const CreatePost = () => {
+const CreatePost = ({uploadPost}) => {
   return (
-    <div>CreatePost (edited)</div>
+    <div>CreatePost component (edited)</div>
   )
 }
 
