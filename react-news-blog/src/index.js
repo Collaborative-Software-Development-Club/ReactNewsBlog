@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//this is the file that starts out app!
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+//this line renders the content to the browser. at the elem. with the id root!
+//rendering app to the browser!
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> 
+    
   </React.StrictMode>
 );
 

@@ -1,7 +1,7 @@
 {
 	"posts": [
 		{
-			"title": "My new post",
+			"title": "My new post!",
 			"content": "this is a post I wrote. It is the first one.",
 			"author": "John Doe",
 			"date": "2014-03-12T13:37:27+00:00"
