@@ -4,12 +4,12 @@ import React from 'react';
 //will be rendered to the DOM...
 
 
-const Post = () => {
+const Post = ({title, text, date}) => {
     return ( 
 
         <div className = "Post">
 
-            <h7>Please enter your text below!</h7>
+            <h7>{title}</h7>
             <br/>
             <textArea size = "500" height = "300" />
 
