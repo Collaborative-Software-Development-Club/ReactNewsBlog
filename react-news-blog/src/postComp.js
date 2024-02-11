@@ -11,7 +11,8 @@ const Post = ({title, text, date}) => {
 
             <h7>{title}</h7>
             <br/>
-            <textArea size = "500" height = "300" />
+            <textArea size = "500" height = "300" >{text}
+                </textArea>
 
         </div>
 

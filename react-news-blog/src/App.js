@@ -5,7 +5,7 @@ import Post from './postComp';
 //this is the root component. A function called App.
 function App() {
   return (
-    <Post/>
+    <Post title = "HI" text = "How are you"/>
     //<MainPage />
   );
 }
