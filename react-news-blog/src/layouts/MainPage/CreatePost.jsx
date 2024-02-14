@@ -1,11 +1,13 @@
 import React from 'react'
 
 //Create the structure of the blog post
-const CreatePost = ({ title, content }) => {
+const Post = ({ title, content }) => {
   return (
     <div className = "blog-Post">
-      <h2>{title}</h2>
-      <div className = "blog-post-content">{content}</div>
+      
+      <h1 className = "blog-Post-Title" >{title}</h1>
+      <p className = "blog-Post-Content">{content}</p>
+      <button className = "like-Button"> Like </button>
     </div>
   );
 }
@@ -14,9 +16,9 @@ const CreatePost = ({ title, content }) => {
 function CreateBlogPost({title, content}){
   return(
     <div className = "blog-Post-Stream">
-      <CreatePost title = {title} content = {content}/>
+      <Post title = {title} content = {content}/>
     </div>
   );
 }
 
-export default CreatePost
+export default CreateBlogPost

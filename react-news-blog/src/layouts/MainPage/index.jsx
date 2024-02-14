@@ -4,6 +4,7 @@ import BlogPost from "./BlogPost.jsx"
 
 import useData from '../../data/useData.js'
 
+//why do we have an index.jsx file and an index.js file??
 const MainPage = () => {
 
     const [posts, uploadPost] = useData();

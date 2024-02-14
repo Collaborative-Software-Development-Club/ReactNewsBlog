@@ -1,0 +1,33 @@
+.blog-Post-Stream{
+  display: flex;
+  justify-content: right;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.blog-Post{
+  border: 3px solid;
+  border-radius: 5px;
+  padding: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  
+}
+
+.like-Button{
+  margin-right: auto;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+.blog-Post-Title{
+  color: #333;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
