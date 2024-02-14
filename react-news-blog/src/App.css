@@ -1,4 +1,5 @@
 .blog-Post-Stream{
+  flex-direction: column;
   display: flex;
   justify-content: right;
   padding-right: 50px;
@@ -12,7 +13,7 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   width: 500px;
   
 }
