@@ -4,6 +4,7 @@
   justify-content: right;
   padding-right: 50px;
   padding-bottom: 50px;
+  gap: 1rem;
 }
 
 .blog-Post{

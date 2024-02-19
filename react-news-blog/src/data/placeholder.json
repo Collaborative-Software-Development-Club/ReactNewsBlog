@@ -1,4 +1,7 @@
 {
+    "user": {
+		"name": "Jon Doe"
+	},
 	"posts": [
 		{
 			"title": "My new post!",
@@ -66,8 +69,5 @@
 			"author": "James Orange",
 			"date": "2024-02-10T21:30:00Z"
 		}
-	],
-	"user": {
-		"name": "Jon Doe"
-	}
+	]
 }

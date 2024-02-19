@@ -5,7 +5,9 @@ const BlogPost = ({ postData }) => {
 		<div className="blog-Post">
 			<h3 className="blog-Post-Title">{postData.title}</h3>
 			<p className="blog-Post-Content">{postData.content}</p>
+            <p>{postData.author}</p>
 			<button className="like-Button"> Like </button>
+            <p>Date: {new Date(postData.date).toDateString()}</p>
 		</div>
 	);
 };
