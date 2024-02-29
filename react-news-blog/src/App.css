@@ -26,6 +26,12 @@
   border-radius: 4px;
 }
 
+.likes{
+  margin-right: auto;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 4px;
+}
 
 .blog-Post-Title{
   color: #333;

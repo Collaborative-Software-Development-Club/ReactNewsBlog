@@ -7,7 +7,8 @@
 			"title": "My new post!",
 			"content": "this is a post I wrote. It is the first one.",
 			"author": "John Doe",
-			"date": "2014-03-12T13:37:27+00:00"
+			"date": "2025-03-12T13:37:27+00:00",
+			"likes": "0"
 		},
 		{
 			"title": "First Post Ever",
