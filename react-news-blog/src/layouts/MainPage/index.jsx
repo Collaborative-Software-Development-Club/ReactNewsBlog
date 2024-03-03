@@ -1,5 +1,6 @@
 import React from "react";
 import CreatePost from "./PostCreation.jsx";
+import likeFunc from "./likeFunc.jsx";
 import BlogPost from "./BlogPost.jsx";
 
 import useData from "../../data/useData.js";
@@ -13,7 +14,7 @@ const MainPage = () => {
 		<>
 			<h1>CSDC Blog</h1>
 			<h2>Write a post</h2>
-			<CreatePost uploadPost={uploadPost} user={user} />
+			<CreatePost uploadPost={uploadPost} user={user}/>
 			<h2>Feed</h2>
 			<div className="blog-Post-Stream">
 				{posts.map((post, index) => (

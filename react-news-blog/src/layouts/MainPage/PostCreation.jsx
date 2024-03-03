@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PostCreation = ({ uploadPost, user }) => {
+const PostCreation = ({ uploadPost, user}) => {
 	const [title, setTitle] = useState("");
 	const [content, setContent ] = useState("");
 
@@ -15,10 +15,12 @@ const PostCreation = ({ uploadPost, user }) => {
 					author: user.name,
 					title: title,
 					content: content,
+					likes: 0,
 					date: new Date().toISOString(),
 				});
 			}}
 		>
+
 			<p>Posting as {user.name}</p>
 			<label htmlFor="title">Title</label>
 			<input
