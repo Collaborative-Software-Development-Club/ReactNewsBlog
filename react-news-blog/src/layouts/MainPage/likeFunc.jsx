@@ -12,7 +12,7 @@ const UpdateLikeC = () => {
     //update the actual like button...
     return (
         <div>
-            <button className="like-Button" onClick={likeIt}>Likes</button> 
+            <button className="like-Button" onClick={likeIt}>Like</button> 
             <p className="likes">{likeNum}</p>
         </div>
     );
