@@ -1,4 +1,5 @@
 import React from "react";
+import UpdateLikeC from "./likeFunc.jsx";
 
 const BlogPost = ({ postData }) => {
 	return (
@@ -6,11 +7,11 @@ const BlogPost = ({ postData }) => {
 			<h3 className="blog-Post-Title">{postData.title}</h3>
 			<p className="blog-Post-Content">{postData.content}</p>
             <p>{postData.author}</p>
-			<button className="like-Button"> Like </button>
-			<p className="likes">{postData.likes}</p>
+			<UpdateLikeC />
             <p>Date: {new Date(postData.date).toDateString()}</p>
 		</div>
 	);
+
 };
 
 export default BlogPost;

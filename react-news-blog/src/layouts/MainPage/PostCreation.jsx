@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const PostCreation = ({ uploadPost, user}) => {
 	const [title, setTitle] = useState("");
 	const [content, setContent ] = useState("");
+	const [likes, setLikes ] = useState(0);
 
 	return (
 		<form
@@ -11,11 +12,12 @@ const PostCreation = ({ uploadPost, user}) => {
 				console.log("is submitting");
                 setTitle("");
                 setContent("");
+				setLikes(0);
 				uploadPost({
 					author: user.name,
 					title: title,
 					content: content,
-					likes: 0,
+					likes: likes,
 					date: new Date().toISOString(),
 				});
 			}}

@@ -1,26 +1,21 @@
 import React, { useState } from "react";
 
-const UpdateLikeC = ({ likeC }) => {
+const UpdateLikeC = () => {
 	//initialize my user modifiable variable with likeC!
-    let [likeNum, setLikes ] = useState(likeC);
+    let [likeNum, setLikes ] = useState(0);
 
     //this updates the setLikes varible by 1.
 	const likeIt = () => {
         //update the original likeNum to setLikes.
         setLikes(likeNum + 1);
     }
-
-    //should I use a form so that when the button is clicked 
-    //I update the like count. Though I'm not sure how to connect this to the 
-    //actual post...
-    <form>
-        onClick={event =>{
-            event.preventDefault();
-            likeIt(0);
-        }
-        }
-        
-    </form>
+    //update the actual like button...
+    return (
+        <div>
+            <button className="like-Button" onClick={likeIt}>Likes</button> 
+            <p className="likes">{likeNum}</p>
+        </div>
+    );
 
 };
 

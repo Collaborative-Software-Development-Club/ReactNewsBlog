@@ -1,6 +1,5 @@
 import React from "react";
 import CreatePost from "./PostCreation.jsx";
-import likeFunc from "./likeFunc.jsx";
 import BlogPost from "./BlogPost.jsx";
 
 import useData from "../../data/useData.js";
