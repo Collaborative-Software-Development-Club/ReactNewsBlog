@@ -21,6 +21,8 @@ const PostCreation = ({ uploadPost, user}) => {
 			}}
 		>
 
+
+
 			<p>Posting as {user.name}</p>
 			<label htmlFor="title">Title</label>
 			<input

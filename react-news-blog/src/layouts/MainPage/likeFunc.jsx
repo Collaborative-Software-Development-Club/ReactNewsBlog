@@ -10,6 +10,18 @@ const UpdateLikeC = ({ likeC }) => {
         setLikes(likeNum + 1);
     }
 
+    //should I use a form so that when the button is clicked 
+    //I update the like count. Though I'm not sure how to connect this to the 
+    //actual post...
+    <form>
+        onClick={event =>{
+            event.preventDefault();
+            likeIt(0);
+        }
+        }
+        
+    </form>
+
 };
 
 export default UpdateLikeC;
