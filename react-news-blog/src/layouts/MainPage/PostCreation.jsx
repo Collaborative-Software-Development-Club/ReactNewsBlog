@@ -17,6 +17,7 @@ const PostCreation = ({ uploadPost, user }) => {
 			title: title,
 			content: content,
 			date: getCurrentISODate(),
+      likes: 0,
 		};
 	};
 
