@@ -1,23 +1,17 @@
 import React from 'react';
-
 import './App.css';
-import MainPage from './layouts/MainPage'
-import Postspage from './layouts/Posts'
-//import react router to set up routing map
+import MainPage from './layouts/MainPage';
+import PostPage from './layouts/PostPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <>
+const App = () => {
+  return (<>
       <BrowserRouter>
-        <Routes path="/">
-          <Route path = "post" element ={<Postspage/>}/>
-          <Route index element ={<MainPage/>}/>
-
+        <Routes>
+          <Route index element={<MainPage />} />
+          <Route path="/post/:id" element={<PostPage />} />
         </Routes>
-      </BrowserRouter>
-    </>
-
+      </BrowserRouter></>
   );
 }
 
