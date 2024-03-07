@@ -3,71 +3,162 @@
 		"name": "Jon Doe"
 	},
 	"posts": [
-		{
-			"title": "My new post!",
-			"content": "this is a post I wrote. It is the first one.",
-			"author": "John Doe",
-			"date": "2014-03-12T13:37:27+00:00"
-		},
-		{
-			"title": "First Post Ever",
-			"content": "This is the very first post ever made on this blog. Welcome to our community!",
-			"author": "Alex Smith",
-			"date": "2024-02-01T10:00:00Z"
-		},
-		{
-			"title": "Introducing Our Mission",
-			"content": "We aim to provide insightful articles and engaging discussions on various topics. Let's dive in!",
-			"author": "Jane Doe",
-			"date": "2024-02-02T12:30:00Z"
-		},
-		{
-			"title": "Meeting the Team",
-			"content": "Get to know the people behind the scenes and learn what makes our team tick.",
-			"author": "Michael Brown",
-			"date": "2024-02-03T14:00:00Z"
-		},
-		{
-			"title": "Latest Industry Trends",
-			"content": "Stay ahead of the curve with our latest updates on industry trends and insights.",
-			"author": "Sarah White",
-			"date": "2024-02-04T15:30:00Z"
-		},
-		{
-			"title": "Reader Questions Answered",
-			"content": "We answer some of the most frequently asked questions from our readers to help you navigate through our content.",
-			"author": "Emma Green",
-			"date": "2024-02-05T16:00:00Z"
-		},
-		{
-			"title": "Behind the Scenes",
-			"content": "Take a peek behind the scenes to see how we create the content you love reading every day.",
-			"author": "David Black",
-			"date": "2024-02-06T17:30:00Z"
-		},
-		{
-			"title": "Exclusive Interviews",
-			"content": "Join us as we host exclusive interviews with experts in the field.",
-			"author": "Olivia Blue",
-			"date": "2024-02-07T18:00:00Z"
-		},
-		{
-			"title": "Readership Survey Results",
-			"content": "Find out what you told us about your reading habits and preferences in our latest survey results.",
-			"author": "Peter Grey",
-			"date": "2024-02-08T19:30:00Z"
-		},
-		{
-			"title": "New Features Coming Soon",
-			"content": "Discover the exciting features we're planning to introduce to enhance your reading experience.",
-			"author": "Laura Purple",
-			"date": "2024-02-09T20:00:00Z"
-		},
-		{
-			"title": "Community Spotlight",
-			"content": "Meet some of our loyal readers and contributors who have made significant contributions to our community.",
-			"author": "James Orange",
-			"date": "2024-02-10T21:30:00Z"
-		}
-	]
+        {
+          "id": "b2c8d7f5",
+          "title": "My new post!",
+          "content": "this is a post I wrote. It is the first one.",
+          "author": "John Doe",
+          "date": "2014-03-12T13:37:27+00:00"
+        },
+        {
+          "id": "a1e6f2c3",
+          "title": "First Post Ever",
+          "content": "This is the very first post ever made on this blog. Welcome to our community!",
+          "author": "Alex Smith",
+          "date": "2024-02-01T10:00:00Z"
+        },
+        {
+          "id": "d9b8a7f6",
+          "title": "Introducing Our Mission",
+          "content": "We aim to provide insightful articles and engaging discussions on various topics. Let's dive in!",
+          "author": "Jane Doe",
+          "date": "2024-02-02T12:30:00Z"
+        },
+        {
+          "id": "e5c4d3b2",
+          "title": "Meeting the Team",
+          "content": "Get to know the people behind the scenes and learn what makes our team tick.",
+          "author": "Michael Brown",
+          "date": "2024-02-03T14:00:00Z"
+        },
+        {
+          "id": "f7a8b9c6",
+          "title": "Latest Industry Trends",
+          "content": "Stay ahead of the curve with our latest updates on industry trends and insights.",
+          "author": "Sarah White",
+          "date": "2024-02-04T15:30:00Z"
+        },
+        {
+          "id": "c6d5e4f3",
+          "title": "Reader Questions Answered",
+          "content": "We answer some of the most frequently asked questions from our readers to help you navigate through our content.",
+          "author": "Emma Green",
+          "date": "2024-02-05T16:00:00Z"
+        },
+        {
+          "id": "a2b3c4d5",
+          "title": "Behind the Scenes",
+          "content": "Take a peek behind the scenes to see how we create the content you love reading every day.",
+          "author": "David Black",
+          "date": "2024-02-06T17:30:00Z"
+        },
+        {
+          "id": "e6f7a8b9",
+          "title": "Exclusive Interviews",
+          "content": "Join us as we host exclusive interviews with experts in the field.",
+          "author": "Olivia Blue",
+          "date": "2024-02-07T18:00:00Z"
+        },
+        {
+          "id": "c8d9e0f1",
+          "title": "Readership Survey Results",
+          "content": "Find out what you told us about your reading habits and preferences in our latest survey results.",
+          "author": "Peter Grey",
+          "date": "2024-02-08T19:30:00Z"
+        },
+        {
+          "id": "a4b5c6d7",
+          "title": "New Features Coming Soon",
+          "content": "Discover the exciting features we're planning to introduce to enhance your reading experience.",
+          "author": "Laura Purple",
+          "date": "2024-02-09T20:00:00Z"
+        },
+        {
+          "id": "e0f1a2b3",
+          "title": "Community Spotlight",
+          "content": "Meet some of our loyal readers and contributors who have made significant contributions to our community.",
+          "author": "James Orange",
+          "date": "2024-02-10T21:30:00Z"
+        }
+      ],
+      "comments": [
+        {
+          "post": "b2c8d7f5",
+          "author": "JaneSmith",
+          "like_count": 12,
+          "id": "ab1c2d3e"
+        },
+        {
+          "post": "b2c8d7f5",
+          "author": "BobJones",
+          "like_count": 5,
+          "id": "f4e5d6c7"
+        },
+        {
+          "post": "a1e6f2c3",
+          "author": "SarahLee",
+          "like_count": 18,
+          "id": "b8a9c0d1"
+        },
+        {
+          "post": "d9b8a7f6",
+          "author": "TomWilson",
+          "like_count": 3,
+          "id": "e2f3g4h5"
+        },
+        {
+          "post": "d9b8a7f6",
+          "author": "EmilyDavis",
+          "like_count": 9,
+          "id": "i6j7k8l9"
+        },
+        {
+          "post": "e5c4d3b2",
+          "author": "MichaelBrown",
+          "like_count": 22,
+          "id": "m0n1o2p3"
+        },
+        {
+          "post": "f7a8b9c6",
+          "author": "JessicaThomas",
+          "like_count": 7,
+          "id": "q4r5s6t7"
+        },
+        {
+          "post": "c6d5e4f3",
+          "author": "DavidLee",
+          "like_count": 14,
+          "id": "u8v9w0x1"
+        },
+        {
+          "post": "a2b3c4d5",
+          "author": "SarahJones",
+          "like_count": 6,
+          "id": "y2z3a4b5"
+        },
+        {
+          "post": "e6f7a8b9",
+          "author": "JohnDavis",
+          "like_count": 11,
+          "id": "c6d7e8f9"
+        },
+        {
+          "post": "c8d9e0f1",
+          "author": "AmyWilson",
+          "like_count": 19,
+          "id": "g0h1i2j3"
+        },
+        {
+          "post": "a4b5c6d7",
+          "author": "MichaelThomas",
+          "like_count": 4,
+          "id": "k4l5m6n7"
+        },
+        {
+          "post": "e0f1a2b3",
+          "author": "JessicaLee",
+          "like_count": 16,
+          "id": "o8p9q0r1"
+        }
+      ]
 }
