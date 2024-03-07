@@ -9,7 +9,7 @@ const LikeCount = ({likeCount}) => {
     }
 
     return (
-        <div>
+        <div className="like-counter">
             <button className="like-Button" onClick={toggleLike}>Like</button> 
             <p className="likes">{isLiked ? likeCount + 1: likeCount}</p>
         </div>

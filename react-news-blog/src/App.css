@@ -20,14 +20,6 @@
 }
 
 .like-Button{
-  margin-right: auto;
-  background-color: aliceblue;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.likes{
-  margin-right: auto;
   background-color: aliceblue;
   padding: 10px;
   border-radius: 4px;
@@ -38,4 +30,10 @@
   border: 2px solid;
   border-radius: 5px;
   padding: 10px;
+}
+
+.like-counter {
+    display: flex;
+    align-content: flex-start;
+    gap: 1rem
 }
