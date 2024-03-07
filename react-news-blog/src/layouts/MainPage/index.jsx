@@ -18,6 +18,7 @@ const MainPage = () => {
 			<div className="blog-Post-Stream">
 				{posts.map((post, index) => (
 					<BlogPost postData={post} key={index} />
+					
 				))}
 			</div>
 		</>

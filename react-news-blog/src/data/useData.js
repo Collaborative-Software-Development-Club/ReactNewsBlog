@@ -7,6 +7,7 @@ function useData() {
     posts.sort((postA, postB) => new Date(postB.date) - new Date(postA.date))
 	return { posts: posts, user: data.user, 
 		uploadPost: (postData) => setPosts([...posts, postData]) };
+	
 }
 
 export default useData;
