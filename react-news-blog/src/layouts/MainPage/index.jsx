@@ -16,8 +16,8 @@ const MainPage = () => {
 			<CreatePost uploadPost={uploadPost} user={user}/>
 			<h2>Feed</h2>
 			<div className="blog-Post-Stream">
-				{posts.map((post, index) => (
-					<BlogPost postData={post} key={index} />
+				{posts.map((post) => (
+					<BlogPost postData={post} key={post.id} />
 					
 				))}
 			</div>
