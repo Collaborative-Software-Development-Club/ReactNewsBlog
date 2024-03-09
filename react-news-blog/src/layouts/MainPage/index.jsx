@@ -17,12 +17,12 @@ const MainPage = () => {
 			<h2>Write a post</h2>
 			<CreatePost uploadPost={uploadPost} user={user}/>
 			<h2>Feed</h2>
-			<div className="blog-Post-Stream">
+			<ul className="blog-Post-Stream">
 				{posts.map((post) => (
-					<BlogPost postData={post} key={post.id} />
-					
+					<li><a href={`./post/${post.id}`}><BlogPost postData={post} key={post.id} /></a></li>
+				
 				))}
-			</div>
+			</ul>
 		</>
 	);
 };
