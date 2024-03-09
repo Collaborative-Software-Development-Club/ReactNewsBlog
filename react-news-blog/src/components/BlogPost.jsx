@@ -1,5 +1,5 @@
 import React from "react";
-import LikeCount from "./LikeCount";
+import LikeCount from "../layouts/MainPage/LikeCount";
 
 const BlogPost = ({postData}) => {
 	console.log(postData)

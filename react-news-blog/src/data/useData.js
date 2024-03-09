@@ -9,7 +9,6 @@ function useData() {
 
 	return {
 		posts: posts,
-		user: data.user,
 		uploadPost: uploadPost
 	};
 }
