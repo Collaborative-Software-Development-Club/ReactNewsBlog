@@ -1,175 +1,201 @@
 {
     "user": {
-		"name": "Jon Doe"
-	},
-	"posts": [
+        "name": "Jon Doe"
+    },
+    "posts": [
         {
-          "id": "b2c8d7f5",
-          "title": "My new post!",
-          "content": "this is a post I wrote. It is the first one.",
-          "author": "John Doe",
-          "date": "2014-03-12T13:37:27+00:00",
-          "likes": 234
+            "id": "b2c8d7f5",
+            "title": "My new post!",
+            "content": "this is a post I wrote. It is the first one.",
+            "author": "John Doe",
+            "date": "2014-03-12T13:37:27+00:00",
+            "likes": 234
         },
         {
-          "id": "a1e6f2c3",
-          "title": "First Post Ever",
-          "content": "This is the very first post ever made on this blog. Welcome to our community!",
-          "author": "Alex Smith",
-          "date": "2024-02-01T10:00:00Z",
-          "likes": 519
+            "id": "a1e6f2c3",
+            "title": "First Post Ever",
+            "content": "This is the very first post ever made on this blog. Welcome to our community!",
+            "author": "Alex Smith",
+            "date": "2024-02-01T10:00:00Z",
+            "likes": 519
         },
         {
-          "id": "d9b8a7f6",
-          "title": "Introducing Our Mission",
-          "content": "We aim to provide insightful articles and engaging discussions on various topics. Let's dive in!",
-          "author": "Jane Doe",
-          "date": "2024-02-02T12:30:00Z",
-          "likes": 376
+            "id": "d9b8a7f6",
+            "title": "Introducing Our Mission",
+            "content": "We aim to provide insightful articles and engaging discussions on various topics. Let's dive in!",
+            "author": "Jane Doe",
+            "date": "2024-02-02T12:30:00Z",
+            "likes": 376
         },
         {
-          "id": "e5c4d3b2",
-          "title": "Meeting the Team",
-          "content": "Get to know the people behind the scenes and learn what makes our team tick.",
-          "author": "Michael Brown",
-          "date": "2024-02-03T14:00:00Z",
-          "likes": 107
+            "id": "e5c4d3b2",
+            "title": "Meeting the Team",
+            "content": "Get to know the people behind the scenes and learn what makes our team tick.",
+            "author": "Michael Brown",
+            "date": "2024-02-03T14:00:00Z",
+            "likes": 107
         },
         {
-          "id": "f7a8b9c6",
-          "title": "Latest Industry Trends",
-          "content": "Stay ahead of the curve with our latest updates on industry trends and insights.",
-          "author": "Sarah White",
-          "date": "2024-02-04T15:30:00Z",
-          "likes": 482
+            "id": "f7a8b9c6",
+            "title": "Latest Industry Trends",
+            "content": "Stay ahead of the curve with our latest updates on industry trends and insights.",
+            "author": "Sarah White",
+            "date": "2024-02-04T15:30:00Z",
+            "likes": 482
         },
         {
-          "id": "c6d5e4f3",
-          "title": "Reader Questions Answered",
-          "content": "We answer some of the most frequently asked questions from our readers to help you navigate through our content.",
-          "author": "Emma Green",
-          "date": "2024-02-05T16:00:00Z",
-          "likes": 289
+            "id": "c6d5e4f3",
+            "title": "Reader Questions Answered",
+            "content": "We answer some of the most frequently asked questions from our readers to help you navigate through our content.",
+            "author": "Emma Green",
+            "date": "2024-02-05T16:00:00Z",
+            "likes": 289
         },
         {
-          "id": "a2b3c4d5",
-          "title": "Behind the Scenes",
-          "content": "Take a peek behind the scenes to see how we create the content you love reading every day.",
-          "author": "David Black",
-          "date": "2024-02-06T17:30:00Z",
-          "likes": 158
+            "id": "a2b3c4d5",
+            "title": "Behind the Scenes",
+            "content": "Take a peek behind the scenes to see how we create the content you love reading every day.",
+            "author": "David Black",
+            "date": "2024-02-06T17:30:00Z",
+            "likes": 158
         },
         {
-          "id": "e6f7a8b9",
-          "title": "Exclusive Interviews",
-          "content": "Join us as we host exclusive interviews with experts in the field.",
-          "author": "Olivia Blue",
-          "date": "2024-02-07T18:00:00Z",
-          "likes": 623
+            "id": "e6f7a8b9",
+            "title": "Exclusive Interviews",
+            "content": "Join us as we host exclusive interviews with experts in the field.",
+            "author": "Olivia Blue",
+            "date": "2024-02-07T18:00:00Z",
+            "likes": 623
         },
         {
-          "id": "c8d9e0f1",
-          "title": "Readership Survey Results",
-          "content": "Find out what you told us about your reading habits and preferences in our latest survey results.",
-          "author": "Peter Grey",
-          "date": "2024-02-08T19:30:00Z",
-          "likes": 417
+            "id": "c8d9e0f1",
+            "title": "Readership Survey Results",
+            "content": "Find out what you told us about your reading habits and preferences in our latest survey results.",
+            "author": "Peter Grey",
+            "date": "2024-02-08T19:30:00Z",
+            "likes": 417
         },
         {
-          "id": "a4b5c6d7",
-          "title": "New Features Coming Soon",
-          "content": "Discover the exciting features we're planning to introduce to enhance your reading experience.",
-          "author": "Laura Purple",
-          "date": "2024-02-09T20:00:00Z",
-          "likes": 194
+            "id": "a4b5c6d7",
+            "title": "New Features Coming Soon",
+            "content": "Discover the exciting features we're planning to introduce to enhance your reading experience.",
+            "author": "Laura Purple",
+            "date": "2024-02-09T20:00:00Z",
+            "likes": 194
         },
         {
-          "id": "e0f1a2b3",
-          "title": "Community Spotlight",
-          "content": "Meet some of our loyal readers and contributors who have made significant contributions to our community.",
-          "author": "James Orange",
-          "date": "2024-02-10T21:30:00Z",
-          "likes": 638
+            "id": "e0f1a2b3",
+            "title": "Community Spotlight",
+            "content": "Meet some of our loyal readers and contributors who have made significant contributions to our community.",
+            "author": "James Orange",
+            "date": "2024-02-10T21:30:00Z",
+            "likes": 638
         }
-      ],
-      "comments": [
+    ],
+    "comments": [
         {
-          "post": "b2c8d7f5",
-          "author": "JaneSmith",
-          "like_count": 12,
-          "id": "ab1c2d3e"
+            "post": "b2c8d7f5",
+            "author": "JaneSmith",
+            "likes": 12,
+            "id": "ab1c2d3e",
+            "date": "2023-04-15T10:30:00.000Z",
+            "content": "Great post! Loved the insights shared."
         },
         {
-          "post": "b2c8d7f5",
-          "author": "BobJones",
-          "like_count": 5,
-          "id": "f4e5d6c7"
+            "post": "b2c8d7f5",
+            "author": "BobJones",
+            "likes": 5,
+            "id": "f4e5d6c7",
+            "date": "2023-04-16T08:15:00.000Z",
+            "content": "Interesting read, thanks for sharing!"
         },
         {
-          "post": "a1e6f2c3",
-          "author": "SarahLee",
-          "like_count": 18,
-          "id": "b8a9c0d1"
+            "post": "a1e6f2c3",
+            "author": "SarahLee",
+            "likes": 18,
+            "id": "b8a9c0d1",
+            "date": "2023-04-17T14:45:00.000Z",
+            "content": "Brilliant post! Can't wait for more like this."
         },
         {
-          "post": "d9b8a7f6",
-          "author": "TomWilson",
-          "like_count": 3,
-          "id": "e2f3g4h5"
+            "post": "d9b8a7f6",
+            "author": "TomWilson",
+            "likes": 3,
+            "id": "e2f3g4h5",
+            "date": "2023-04-18T11:20:00.000Z",
+            "content": "Good job explaining the mission. Clear and concise."
         },
         {
-          "post": "d9b8a7f6",
-          "author": "EmilyDavis",
-          "like_count": 9,
-          "id": "i6j7k8l9"
+            "post": "d9b8a7f6",
+            "author": "EmilyDavis",
+            "likes": 9,
+            "id": "i6j7k8l9",
+            "date": "2023-04-19T17:00:00.000Z",
+            "content": "Loved the focus on engaging discussions!"
         },
         {
-          "post": "e5c4d3b2",
-          "author": "MichaelBrown",
-          "like_count": 22,
-          "id": "m0n1o2p3"
+            "post": "e5c4d3b2",
+            "author": "MichaelBrown",
+            "likes": 22,
+            "id": "m0n1o2p3",
+            "date": "2023-04-20T09:30:00.000Z",
+            "content": "Great to know the team behind the scenes!"
         },
         {
-          "post": "f7a8b9c6",
-          "author": "JessicaThomas",
-          "like_count": 7,
-          "id": "q4r5s6t7"
+            "post": "f7a8b9c6",
+            "author": "JessicaThomas",
+            "likes": 7,
+            "id": "q4r5s6t7",
+            "date": "2023-04-21T13:45:00.000Z",
+            "content": "Informative article on the latest industry trends."
         },
         {
-          "post": "c6d5e4f3",
-          "author": "DavidLee",
-          "like_count": 14,
-          "id": "u8v9w0x1"
+            "post": "c6d5e4f3",
+            "author": "DavidLee",
+            "likes": 14,
+            "id": "u8v9w0x1",
+            "date": "2023-04-22T16:15:00.000Z",
+            "content": "Thanks for answering my questions!"
         },
         {
-          "post": "a2b3c4d5",
-          "author": "SarahJones",
-          "like_count": 6,
-          "id": "y2z3a4b5"
+            "post": "a2b3c4d5",
+            "author": "SarahJones",
+            "likes": 6,
+            "id": "y2z3a4b5",
+            "date": "2023-04-23T10:00:00.000Z",
+            "content": "Interesting behind-the-scenes look!"
         },
         {
-          "post": "e6f7a8b9",
-          "author": "JohnDavis",
-          "like_count": 11,
-          "id": "c6d7e8f9"
+            "post": "e6f7a8b9",
+            "author": "JohnDavis",
+            "likes": 11,
+            "id": "c6d7e8f9",
+            "date": "2023-04-24T14:30:00.000Z",
+            "content": "Loved the expert interviews!"
         },
         {
-          "post": "c8d9e0f1",
-          "author": "AmyWilson",
-          "like_count": 19,
-          "id": "g0h1i2j3"
+            "post": "c8d9e0f1",
+            "author": "AmyWilson",
+            "likes": 19,
+            "id": "g0h1i2j3",
+            "date": "2023-04-25T18:45:00.000Z",
+            "content": "Insightful survey results, thanks for sharing!"
         },
         {
-          "post": "a4b5c6d7",
-          "author": "MichaelThomas",
-          "like_count": 4,
-          "id": "k4l5m6n7"
+            "post": "a4b5c6d7",
+            "author": "MichaelThomas",
+            "likes": 4,
+            "id": "k4l5m6n7",
+            "date": "2023-04-26T12:00:00.000Z",
+            "content": "Can't wait for the new features!"
         },
         {
-          "post": "e0f1a2b3",
-          "author": "JessicaLee",
-          "like_count": 16,
-          "id": "o8p9q0r1"
+            "post": "e0f1a2b3",
+            "author": "JessicaLee",
+            "likes": 16,
+            "id": "o8p9q0r1",
+            "date": "2023-04-27T20:15:00.000Z",
+            "content": "Great to see the community spotlight!"
         }
-      ]
+    ]
 }
