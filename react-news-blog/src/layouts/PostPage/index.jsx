@@ -15,7 +15,7 @@ const PostPage = () => {
     }
 	return (
 		<>
-			postData ? <BlogPost postData={postData}/>
+			<BlogPost postData={postData}/>
             <h2>Comments:</h2>
             <ul>Add comments here as list items</ul>
 		</>
