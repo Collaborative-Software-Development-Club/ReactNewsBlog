@@ -1,6 +1,6 @@
 import React from "react";
 import CreatePost from "./PostCreation.jsx";
-import BlogPost from "./BlogPost.jsx";
+import BlogPostMain from "./BlogPostMain.jsx";
 
 import useData from "../../data/useData.js";
 
@@ -17,9 +17,12 @@ const MainPage = () => {
 			<h2>Feed</h2>
 			<div className="blog-Post-Stream">
 				{posts.map((post, index) => (
-					<BlogPost postData={post} key={index} />
+					/*BlogPostMain here to represent what
+					we may want to show on the main page...*/
+					<BlogPostMain postData={post} key={index} />
 					
 				))}
+			
 			</div>
 		</>
 	);

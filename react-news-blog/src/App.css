@@ -5,6 +5,38 @@
   padding-right: 50px;
   padding-bottom: 50px;
   gap: 1rem;
+  overflow: scroll; 
+  width: 170px;
+  height: 400px;
+  
+}
+
+
+/*
+Used to display all posts in the corner...*/
+.main-page-posts{
+
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 10px;
+    
+    /*I think here we could just put each post's name and small blurb like
+    what I think Yoyi was working on.*/
+  
+    display: auto;
+    flex-direction: column;
+    align-items: left;
+    width: 150px;
+    height: 100px;
+  
+    overflow: fixed;
+    
+    
+    
+    /*Set width to 150 to represent how it might
+    look on the csdc website. I think the posts would be 
+    on the left for the viewer to scroll through if interested.*/
+    
 }
 
 .blog-Post{
