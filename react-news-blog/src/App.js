@@ -1,18 +1,26 @@
-import React from 'react';
-import './App.css';
-import MainPage from './layouts/MainPage';
-import PostPage from './layouts/PostPage';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import './App.css'
+
+import MainPage from './layouts/MainPage'
+import PostPage from './layouts/PostPage'
+
+import useData from './data/useData.js'
 
 const App = () => {
-  return (<>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<MainPage />} />
-          <Route path="/post/:id" element={<PostPage />} />
-        </Routes>
-      </BrowserRouter></>
-  );
+    // state is here so that it can hold when going from one page to another
+    const { posts, uploadPost } = useData()
+    return (
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route index element={<MainPage posts={posts} uploadPost={uploadPost} />} />
+                    <Route path='/post/:id' element={<PostPage />} />
+                </Routes>
+            </BrowserRouter>
+        </>
+    )
 }
 
-export default App;
+export default App

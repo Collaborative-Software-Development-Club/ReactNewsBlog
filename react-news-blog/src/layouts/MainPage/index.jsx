@@ -2,12 +2,10 @@ import React from "react";
 import PostWriter from "./PostWriter.jsx";
 import PostPreview from "./PostPreview.jsx";
 
-import useData from "../../data/useData.js";
 import useUserData from "../../data/useUserData.js"
 
 //why do we have an index.jsx file and an index.js file??
-const MainPage = () => {
-	const { posts, uploadPost } = useData();
+const MainPage = ({posts, uploadPost}) => {
     const user = useUserData();
 	console.log("main page", posts);
 
