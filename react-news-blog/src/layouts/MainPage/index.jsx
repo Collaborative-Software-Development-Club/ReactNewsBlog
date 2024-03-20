@@ -17,13 +17,12 @@ const MainPage = () => {
 			<div className="main-page-content">
 				<div>
 					<h2>Feed</h2>
-					<div className="blog-Post-Stream">
-						{posts.map((post, index) => (
-							/*PostPreview here to represent what
-					we may want to show on the main page...*/
-							<PostPreview postData={post} key={index} />
-						))}
-					</div>
+					<ul className="blog-Post-Stream">
+				{posts.map((post) => (
+					<li><a href={`./post/${post.id}`}><PostPreview postData={post} key={post.id} /></a></li>
+				
+				))}
+			</ul>
 				</div>
 				<PostWriter uploadPost={uploadPost} user={user} />
 			</div>

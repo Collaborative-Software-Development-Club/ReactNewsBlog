@@ -1,5 +1,5 @@
 body {
-    padding: 0;
+    padding: 2rem;
     height: 100vh;
     overflow: hidden;
     margin: 0
@@ -16,6 +16,9 @@ body {
   gap: 1rem;
   overflow: scroll; 
   height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-page-content {
@@ -27,7 +30,7 @@ body {
 
 .main-page-content > div {
     flex-grow: 1;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .post-creation-form {
@@ -41,7 +44,7 @@ Used to display all posts in the corner...*/
 .post-preview{
     border: 3px solid;
     border-radius: 5px;
-    padding: 10px;
+    padding: 1rem;
     
     /*I think here we could just put each post's name and small blurb like
     what I think Yoyi was working on.*/
