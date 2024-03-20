@@ -1,7 +1,5 @@
 import React, { useRef } from 'react'
 
-const EMPTY_TEXT = ''
-
 const PostWriter = ({ uploadPost, user }) => {
     const titleRef = useRef()
     const contentRef = useRef()
@@ -22,14 +20,17 @@ const PostWriter = ({ uploadPost, user }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <p>Posting as {user.name}</p>
-            <label htmlFor='title'>Title</label>
-            <input type='text' name='title' ref={titleRef} />
-            <label htmlFor='content'>Content:</label>
-            <textarea ref={contentRef} name='content'></textarea>
-            <input type='submit' value='submit'></input>
-        </form>
+        <div>
+            <h2>Write a post</h2>
+            <form onSubmit={handleSubmit} className="post-creation-form">
+                <p>Posting as {user.name}</p>
+                <label htmlFor='title'>Title</label>
+                <input type='text' name='title' ref={titleRef} />
+                <label htmlFor='content'>Content:</label>
+                <textarea ref={contentRef} name='content'></textarea>
+                <input type='submit' value='submit'></input>
+            </form>
+        </div>
     )
 }
 
