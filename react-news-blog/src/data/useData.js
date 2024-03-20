@@ -1,13 +1,16 @@
-import { useState } from "react";
-import data from "./placeholder.json";
+import { useState } from 'react'
+import data from './placeholder.json'
 
 function useData() {
-	console.log(data);
-	const [posts, setPosts] = useState(data.posts);
+    const [posts, setPosts] = useState(data.posts)
     posts.sort((postA, postB) => new Date(postB.date) - new Date(postA.date))
-	return { posts: posts, user: data.user, 
-		uploadPost: (postData) => setPosts([...posts, postData]) };
-	
+
+    const uploadPost = (postData) => setPosts([...posts, postData])
+
+    return {
+        posts: posts,
+        uploadPost: uploadPost,
+    }
 }
 
-export default useData;
+export default useData
