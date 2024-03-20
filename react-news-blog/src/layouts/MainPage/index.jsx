@@ -4,6 +4,8 @@ import PostPreview from "./PostPreview.jsx";
 
 import useUserData from "../../data/useUserData.js"
 
+import {Link} from "react-router-dom"
+
 //why do we have an index.jsx file and an index.js file??
 const MainPage = ({posts, uploadPost}) => {
     const user = useUserData();
@@ -17,7 +19,7 @@ const MainPage = ({posts, uploadPost}) => {
 					<h2>Feed</h2>
 					<ul className="blog-Post-Stream">
 				{posts.map((post) => (
-					<li><a href={`./post/${post.id}`}><PostPreview postData={post} key={post.id} /></a></li>
+					<li><Link to={`./post/${post.id}`}><PostPreview postData={post} key={post.id} /></Link></li>
 				
 				))}
 			</ul>
