@@ -2,23 +2,23 @@ body {
     padding: 2rem;
     height: 100vh;
     overflow: hidden;
-    margin: 0
+    margin: 0;
 }
 
 #root {
     height: 100%;
 }
 
-.blog-Post-Stream{
-  flex-direction: column;
-  display: flex;
-  justify-content: right;
-  gap: 1rem;
-  overflow: scroll; 
-  height: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.blog-Post-Stream {
+    flex-direction: column;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    overflow: scroll;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .main-page-content {
@@ -36,52 +36,50 @@ body {
 .post-creation-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem
+    gap: 1rem;
 }
 
 /*
 Used to display all posts in the corner...*/
-.post-preview{
+.post-preview {
     border: 3px solid;
     border-radius: 5px;
     padding: 1rem;
-    
+
     /*I think here we could just put each post's name and small blurb like
     what I think Yoyi was working on.*/
-  
+
     display: auto;
     flex-direction: column;
     align-items: left;
-    
 }
 
-.blog-Post{
-  border: 3px solid;
-  border-radius: 5px;
-  padding: 20px;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  width: 500px;
-  
+.blog-Post {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 500px;
 }
 
-.like-Button{
-  background-color: aliceblue;
-  padding: 10px;
-  border-radius: 4px;
+.like-Button {
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 4px;
 }
 
-.blog-Post-Title{
-  color: #333;
-  border: 2px solid;
-  border-radius: 5px;
-  padding: 10px;
+.blog-Post-Title {
+    color: #333;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .like-counter {
     display: flex;
     align-content: flex-start;
-    gap: 1rem
+    gap: 1rem;
 }
