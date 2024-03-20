@@ -6,15 +6,15 @@ only be showing the title and the first sentence or two of each post...*/
 const BlogPostMain = ({postData}) => {
 	console.log(postData)
 	
-	const lineOfT = postData.content.substring(0, 30);
+	const contentSummary = postData.content.substring(0, 30);
 	return (
 		/*className changed from blog-Post to main-page-posts to show
 		how the main page list of posts could be represented...*/
-		<div className="main-page-posts">
+		<div className="post-preview">
 			<p>
-			<h5 >{postData.title}</h5>
-			<h6>{lineOfT}-<br></br>
-            {postData.author}</h6>
+			<h3 >{postData.title}</h3>
+			<p>{contentSummary}...</p>
+            <p>{postData.author}</p>
 			</p>
 		</div>
 	);
