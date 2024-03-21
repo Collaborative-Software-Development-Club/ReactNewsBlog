@@ -1,6 +1,6 @@
 import React from "react";
 import PostWriter from "./PostWriter.jsx";
-import PostPreview from "./PostPreview.jsx";
+import PostPreview from "../../components/PostPreview.jsx";
 
 import useUserData from "../../data/useUserData.js"
 
