@@ -14,6 +14,7 @@ const PostPage = () => {
         return  <h1>Post not found</h1>
     }
 	return (
+
 		<>
 			<BlogPost postData={postData}/>
             <h2>Comments:</h2>

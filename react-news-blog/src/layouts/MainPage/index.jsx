@@ -1,12 +1,11 @@
 import React from 'react'
 import PostWriter from './PostWriter.jsx'
-import PostPreview from './PostPreview.jsx'
+import PostPreview from '../../components/PostPreview.jsx'
 
 import useUserData from '../../data/useUserData.js'
 
 import { Link } from 'react-router-dom'
 
-//why do we have an index.jsx file and an index.js file??
 const MainPage = ({ posts, uploadPost }) => {
     const user = useUserData()
     console.log('main page', posts)
