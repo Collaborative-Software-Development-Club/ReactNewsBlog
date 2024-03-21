@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     padding: 2rem;
     height: 100vh;
@@ -28,8 +32,8 @@ body {
     height: 100%;
 }
 
-.main-page-content > div {
-    flex-grow: 1;
+.main-page-content > * {
+    width: 50%;
     padding: 0 1rem;
 }
 
@@ -82,4 +86,12 @@ Used to display all posts in the corner...*/
     display: flex;
     align-content: flex-start;
     gap: 1rem;
+}
+
+.error {
+    color: red;
+}
+
+p {
+    all: unset
 }
