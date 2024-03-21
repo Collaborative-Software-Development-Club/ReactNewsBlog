@@ -1,5 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    padding: 2rem;
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -7,6 +10,7 @@ body {
 
 #root {
     height: 100%;
+    padding: 2rem;
 }
 
 .blog-Post-Stream {
