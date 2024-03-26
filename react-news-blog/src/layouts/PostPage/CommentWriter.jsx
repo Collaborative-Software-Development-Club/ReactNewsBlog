@@ -1,16 +1,17 @@
 import React, { useRef } from 'react'
+import useData from "../../data/useData"
 
-
-const CommentWriter = ({user, uploadComment}) => {
+const CommentWriter = ({user}) => {
     const contentRef = useRef()
+    const {uploadComment} = useData()
 
-    const createCommentData = (title, content) => {
+    const createCommentData = (content) => {
         return {
-            author: user.name,
-            title: title,
+            //author: user.name,
+            //title: title,
             content: content,
-            date: getCurrentISODate(),
-            likes: 0,
+            //date: getCurrentISODate(),
+            //likes: 0,
         }
     }
 

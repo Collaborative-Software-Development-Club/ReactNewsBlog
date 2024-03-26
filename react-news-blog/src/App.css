@@ -9,17 +9,17 @@ body {
     height: 100%;
 }
 
-.blog-Post-Stream {
+.commentStream { /*need to experiment with multiple comments*/
     flex-direction: column;
     display: flex;
     justify-content: right;
     gap: 1rem;
     overflow: scroll;
-    height: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 
 .main-page-content {
     display: flex;
@@ -65,10 +65,18 @@ Used to display all posts in the corner...*/
     width: 500px;
 }
 
+.comment {
+    border-radius: 3px;
+    border: 2px solid;
+    padding: 15px;
+    width: 30rem;
+}
+
 .like-Button {
     background-color: aliceblue;
     padding: 10px;
     border-radius: 4px;
+    
 }
 
 .blog-Post-Title {
