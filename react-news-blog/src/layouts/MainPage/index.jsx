@@ -2,13 +2,13 @@ import React from 'react'
 import PostWriter from './PostWriter.jsx'
 import PostPreview from '../../components/PostPreview.jsx'
 
-import useUserData from '../../data/useUserData.js'
+import useUserData from "../../data/useUserData.js"
 
-import { Link } from 'react-router-dom'
+import {Link} from "react-router-dom"
 
-const MainPage = ({ posts, uploadPost }) => {
-    const user = useUserData()
-    console.log('main page', posts)
+const MainPage = ({posts, uploadPost}) => {
+    const user = useUserData();
+	console.log("main page", posts);
 
     return (
         <>

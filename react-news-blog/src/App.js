@@ -11,13 +11,14 @@ import useData from './data/useData.js'
 
 const App = () => {
     // state is here so that it can hold when going from one page to another
-    const { posts, uploadPost } = useData()
+    const { posts, uploadPost, comments, uploadComment } = useData()
+
     return (
         <>
             <BrowserRouter>
                 <Routes>
                     <Route index element={<MainPage posts={posts} uploadPost={uploadPost} />} />
-                    <Route path='/post/:id' element={<PostPage />} />
+                    <Route path='/post/:id' element={<PostPage comments={comments} uploadComment={uploadComment}/>} />
                     <Route path='/authors/:author' element={<AuthorPage posts={posts}/>} />
                 </Routes>
             </BrowserRouter>

@@ -1,26 +1,35 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
-import BlogPost from "../../components/BlogPost";
+import BlogPost from '../../components/BlogPost'
+import CommentWriter from '../PostPage/CommentWriter'
+import usePostData from '../../data/usePostData'
+import useUserData from '../../data/useUserData.js'
+import Comment from '../PostPage/Comment'
 
-import usePostData from "../../data/usePostData";
-import useComments from "../../data/useComments";
+const PostPage = ({ comments, uploadComment }) => {
+    const { id } = useParams()
+    const postData = usePostData(id)
+    const user = useUserData()
 
-const PostPage = () => {
-	const { id } = useParams();
-	const postData = usePostData(id);
-    const comments = useComments(id)
-    if(!postData){
-        return  <h1>Post not found</h1>
+    if (!postData) {
+        return <h1>Post not found</h1>
     }
-	return (
+    //filter comments based on post ID, .filter returns true or false for each
+    const postComments = comments.filter((comment) => comment.post === id)
 
-		<>
-			<BlogPost postData={postData}/>
+    return (
+        <div >
+            <BlogPost postData={postData} />
             <h2>Comments:</h2>
-            <ul>Add comments here as list items</ul>
-		</>
-	);
-};
+            <div >
+                {postComments.map((comment) => (
+                    <Comment commentData={comment} />
+                ))}
+            </div>
+            <CommentWriter uploadComment={uploadComment}  user={user} postId={postData.id}/>
+        </div>
+    )
+}
 
-export default PostPage;
+export default PostPage
