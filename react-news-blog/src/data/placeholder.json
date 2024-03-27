@@ -84,6 +84,14 @@
             "likes": 194
         },
         {
+            "id": "a4b5c6d7",
+            "title": "Another thing...",
+            "content": "Once again writing a blog post. Discover the exciting features we're planning to introduce to enhance your reading experience.",
+            "author": "Laura Purple",
+            "date": "2024-02-09T20:00:00Z",
+            "likes": 194
+        },
+        {
             "id": "e0f1a2b3",
             "title": "Community Spotlight",
             "content": "Meet some of our loyal readers and contributors who have made significant contributions to our community.",

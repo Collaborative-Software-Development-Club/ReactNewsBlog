@@ -1,4 +1,5 @@
 import React from "react";
+import AuthorTag from "./AuthorTag";
 
 /*
 BlogPostMain used to post all posts on the main page, I think here we should
@@ -11,11 +12,9 @@ const BlogPostMain = ({postData}) => {
 		/*className changed from blog-Post to main-page-posts to show
 		how the main page list of posts could be represented...*/
 		<div className="post-preview">
-			<p>
 			<h3 >{postData.title}</h3>
 			<p>{contentSummary}...</p>
-            <p>{postData.author}</p>
-			</p>
+            <AuthorTag author={postData.author}/>
 		</div>
 	);
 

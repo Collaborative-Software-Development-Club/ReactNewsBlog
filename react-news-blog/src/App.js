@@ -5,6 +5,7 @@ import './App.css'
 
 import MainPage from './layouts/MainPage'
 import PostPage from './layouts/PostPage'
+import AuthorPage from './layouts/AuthorPage'
 
 import useData from './data/useData.js'
 
@@ -17,7 +18,8 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route index element={<MainPage posts={posts} uploadPost={uploadPost} />} />
-                    <Route path='/post/:id' element={<PostPage comments = {comments} uploadComment={uploadComment}/>} />
+                    <Route path='/post/:id' element={<PostPage />} />
+                    <Route path='/authors/:author' element={<AuthorPage posts={posts}/>} />
                 </Routes>
             </BrowserRouter>
         </>

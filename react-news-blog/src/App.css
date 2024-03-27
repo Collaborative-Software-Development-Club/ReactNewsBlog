@@ -3,7 +3,6 @@
 }
 
 body {
-    padding: 2rem;
     height: 100vh;
     overflow: hidden;
     margin: 0;
@@ -11,6 +10,7 @@ body {
 
 #root {
     height: 100%;
+    padding: 2rem;
 }
 
 .commentStream { /*need to experiment with multiple comments*/
@@ -43,19 +43,15 @@ body {
     gap: 1rem;
 }
 
-/*
-Used to display all posts in the corner...*/
 .post-preview {
     border: 3px solid;
     border-radius: 5px;
     padding: 1rem;
-
-    /*I think here we could just put each post's name and small blurb like
-    what I think Yoyi was working on.*/
-
     display: auto;
+    display: flex;
     flex-direction: column;
     align-items: left;
+    gap: 1rem
 }
 
 .blog-Post {
@@ -66,6 +62,7 @@ Used to display all posts in the corner...*/
     display: flex;
     flex-direction: column;
     align-items: left;
+    gap: 1rem;
     width: 500px;
 }
 
