@@ -13,11 +13,12 @@ body {
     padding: 2rem;
 }
 
-.commentStream { /*need to experiment with multiple comments*/
+.blog-Post-Stream { /*need to experiment with multiple comments*/
     flex-direction: column;
     display: flex;
     justify-content: right;
     gap: 1rem;
+    height: 100%;
     overflow: scroll;
     list-style-type: none;
     margin: 0;

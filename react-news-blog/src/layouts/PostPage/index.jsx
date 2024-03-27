@@ -19,16 +19,16 @@ const PostPage = ({ comments, uploadComment }) => {
     const postComments = comments.filter((comment) => comment.post === id)
 
     return (
-        <>
+        <div >
             <BlogPost postData={postData} />
             <h2>Comments:</h2>
-            <div className='commentStream'>
+            <div >
                 {postComments.map((comment) => (
                     <Comment commentData={comment} />
                 ))}
             </div>
-            <CommentWriter uploadComment={uploadComment} user={user} postId={postData.id}/>
-        </>
+            <CommentWriter uploadComment={uploadComment}  user={user} postId={postData.id}/>
+        </div>
     )
 }
 

@@ -18,7 +18,7 @@ const App = () => {
             <BrowserRouter>
                 <Routes>
                     <Route index element={<MainPage posts={posts} uploadPost={uploadPost} />} />
-                    <Route path='/post/:id' element={<PostPage />} />
+                    <Route path='/post/:id' element={<PostPage comments={comments} uploadComment={uploadComment}/>} />
                     <Route path='/authors/:author' element={<AuthorPage posts={posts}/>} />
                 </Routes>
             </BrowserRouter>
