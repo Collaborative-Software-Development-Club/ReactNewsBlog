@@ -10,7 +10,11 @@ function useData() {
 
 
     const uploadPost = (postData) => setPosts([...posts, postData])
-    const uploadComment = (commentData) => setComments([...comments, commentData])
+    const uploadComment = (commentData) => {
+        console.log("uploading comment")
+        console.log(commentData)
+        setComments([...comments, commentData])
+    }
 
     return {
         posts: posts,

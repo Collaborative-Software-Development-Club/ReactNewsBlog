@@ -28,7 +28,7 @@ const PostWriter = ({ uploadPost, user }) => {
 
     //create a boolean for the limit of characters then use attribute disabled on the submit button when
     const titleIsTooLong = titleLength > TITLE_LIMIT
-    const titleIsEmpty = titleLength == 0
+    const titleIsEmpty = titleLength === 0
     const titleIsValid = !titleIsTooLong && !titleIsEmpty
 
     return (
