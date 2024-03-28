@@ -13,6 +13,12 @@ body {
     padding: 2rem;
 }
 
+
+.allComments{
+    height: 20%;
+    overflow: scroll;
+}
+
 .blog-Post-Stream { /*need to experiment with multiple comments*/
     flex-direction: column;
     display: flex;
@@ -20,6 +26,7 @@ body {
     gap: 1rem;
     height: 100%;
     overflow: scroll;
+
     list-style-type: none;
     margin: 0;
     padding: 0;

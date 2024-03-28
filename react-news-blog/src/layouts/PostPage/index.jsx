@@ -22,7 +22,7 @@ const PostPage = ({ comments, uploadComment }) => {
         <div >
             <BlogPost postData={postData} />
             <h2>Comments:</h2>
-            <div >
+            <div class = 'allComments'>
                 {postComments.map((comment) => (
                     <Comment commentData={comment} />
                 ))}

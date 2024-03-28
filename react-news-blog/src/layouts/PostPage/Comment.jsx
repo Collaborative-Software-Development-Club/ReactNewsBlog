@@ -6,6 +6,7 @@ const Comment = ({ commentData }) => {
         <div className='comment'>
             <h3 className='Author'>{commentData.author}</h3>
             <p className='comment-Content'>{commentData.content}</p>
+            <br></br>
             <p>Date: {new Date(commentData.date).toDateString()}</p>
             <LikeCount likeCount={commentData.likes} />
         </div>
