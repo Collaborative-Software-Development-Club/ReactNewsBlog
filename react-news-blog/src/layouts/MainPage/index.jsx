@@ -16,7 +16,7 @@ const MainPage = ({posts, uploadPost}) => {
             <div className='main-page-content'>
                 <div>
                     <h2>Feed</h2>
-                    <ul className='blog-Post-Stream'>
+                    <ul className='scroll-feed'>
                         {posts.map((post) => (
                             <li>
                                 <Link to={`./post/${post.id}`}>

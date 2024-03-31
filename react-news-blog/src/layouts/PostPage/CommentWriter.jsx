@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import getCurrentISODate from '../../helper-functions/getCurrentISODate'
+
 const COMMENT_LIMIT = 100
 
 const CommentWriter = ({ user, uploadComment, postId }) => {
@@ -19,6 +21,7 @@ const CommentWriter = ({ user, uploadComment, postId }) => {
     const handleSubmit = (event) => {
         event.preventDefault()
         uploadComment(createCommentData())
+        setComment("")
     }
 
     const commentIsTooLong = commentLength > COMMENT_LIMIT
@@ -27,12 +30,12 @@ const CommentWriter = ({ user, uploadComment, postId }) => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} className="comment-creation-form">
-                <h1>Commenting as {user.name}</h1>
+            <form onSubmit={handleSubmit} className="writer-form">
+                <p>Commenting as {user.name}</p>
                 <label htmlFor="content">Content:</label>
                 <textarea name="content" value={comment} onChange={(e) => setComment(e.target.value)}></textarea>
                 {commentIsTooLong && (
-                    <p className="error">The comment must no longer than {COMMENT_LIMIT} characters.</p>
+                <p className="error">The comment must be no longer than {COMMENT_LIMIT} characters.</p>
                 )}
                 {commentIsEmpty && <p className="error">Comment can't be empty.</p>}
                 <input type="submit" value="submit" disabled={!commentIsValid}></input>
@@ -42,7 +45,3 @@ const CommentWriter = ({ user, uploadComment, postId }) => {
 }
 
 export default CommentWriter
-
-function getCurrentISODate() {
-    return new Date().toISOString()
-}

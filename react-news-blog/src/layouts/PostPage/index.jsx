@@ -19,15 +19,19 @@ const PostPage = ({ comments, uploadComment }) => {
     const postComments = comments.filter((comment) => comment.post === id)
 
     return (
-        <div >
-            <BlogPost postData={postData} />
-            <h2>Comments:</h2>
-            <div >
-                {postComments.map((comment) => (
-                    <Comment commentData={comment} />
-                ))}
+        <div className="main-page-content">
+            <div>
+                <BlogPost postData={postData} />
+                <CommentWriter uploadComment={uploadComment} user={user} postId={postData.id} />
             </div>
-            <CommentWriter uploadComment={uploadComment}  user={user} postId={postData.id}/>
+            <div>
+                <h2>Comments:</h2>
+                <ul className="scroll-feed">
+                    {postComments.map((comment) => (
+                        <Comment commentData={comment} key={postData.id} />
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }
