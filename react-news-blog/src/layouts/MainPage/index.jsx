@@ -1,28 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PostWriter from './PostWriter.jsx'
 import PostPreview from '../../components/PostPreview.jsx'
 
-import useUserData from "../../data/useUserData.js"
+import useUserData from '../../data/useUserData.js'
+import usePosts from '../../data/usePosts.js'
 
-import {Link} from "react-router-dom"
+const MainPage = ({ uploadPost }) => {
+    const user = useUserData()
 
-const MainPage = ({posts, uploadPost}) => {
-    const user = useUserData();
-	console.log("main page", posts);
+    const posts = usePosts();
+    console.log(posts)
+    posts.forEach(post => console.log(post))
 
     return (
         <>
             <h1>CSDC Blog</h1>
-            <div className='main-page-content'>
+            <div className="main-page-content">
                 <div>
                     <h2>Feed</h2>
-                    <ul className='scroll-feed'>
+                    <ul className="scroll-feed">
                         {posts.map((post) => (
-                            <li>
-                                <Link to={`./post/${post.id}`}>
-                                    <PostPreview postData={post} key={post.id} />
-                                </Link>
-                            </li>
+                            <PostPreview postData={post} key={post.id} />
                         ))}
                     </ul>
                 </div>

@@ -1,11 +1,13 @@
 import React, { useRef } from 'react'
 import { useState } from 'react'
 
+import uploadPost from '../../data/uploadPost'
+
 import getCurrentISODate from '../../helper-functions/getCurrentISODate'
 
 const TITLE_LIMIT = 60
 
-const PostWriter = ({ uploadPost, user }) => {
+const PostWriter = ({ user }) => {
     const contentRef = useRef()
 
     //set the titleCharCount to be set to the current length of the title to start with.
@@ -17,8 +19,8 @@ const PostWriter = ({ uploadPost, user }) => {
             author: user.name,
             title: title,
             content: content,
-            date: getCurrentISODate(),
-            likes: 0,
+            //date: getCurrentISODate(),
+            //likes: 0,
         }
     }
 
