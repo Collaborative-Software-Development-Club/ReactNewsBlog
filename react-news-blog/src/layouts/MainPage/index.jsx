@@ -20,7 +20,7 @@ const MainPage = ({ uploadPost }) => {
                     <h2>Feed</h2>
                     <ul className="scroll-feed">
                         {posts.map((post) => (
-                            <PostPreview postData={post} key={post.id} />
+                            <PostPreview postData={post} key={post._id} />
                         ))}
                     </ul>
                 </div>
