@@ -43,7 +43,7 @@ app.get("/posts", async (req, res) => {
 
 app.post("/posts", async (req, res) => {
     console.log("uploading this data: ", req.body)
-    const newPost = new BlogPost({ ...req.body });
+    const newPost = new BlogPost({ ...req.body, date: new Date() });
     const insertedPost = await newPost.save();
     return res.status(201).json(insertedPost);
 });
