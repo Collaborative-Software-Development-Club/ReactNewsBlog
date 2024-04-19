@@ -11,17 +11,6 @@ const PORT = process.env.PORT;
 mongoose.connect(
 	`mongodb+srv://${username}:${password}@reactnewsblog.pku64lm.mongodb.net/?retryWrites=true&w=majority&appName=ReactNewsBlog`
 );
-/*
-const article = new BlogPost({
-	title: "SECOND POST!",
-	content: "This is the second post ever",
-});
-
-const firstArticle = await BlogPost.findOne({});
-console.log(firstArticle)
-
-//await article.save();
-*/
 
 const app = express();
 
@@ -38,6 +27,12 @@ app.get("/test", async (req, res) => {
 
 app.get("/posts", async (req, res) => {
     const allPosts = await BlogPost.find();
+    return res.status(200).json(allPosts)
+})
+
+app.get("/posts/:id", async (req, res) => {
+    const id = req.params.id
+    const allPosts = await BlogPost.findById(id);
     return res.status(200).json(allPosts)
 })
 

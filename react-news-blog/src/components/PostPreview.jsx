@@ -13,7 +13,7 @@ const BlogPostMain = ({ postData }) => {
         /*className changed from blog-Post to main-page-posts to show
 		how the main page list of posts could be represented...*/
         <li className="post-preview">
-            <Link to={`./post/${postData.id}`}>
+            <Link to={`./post/${postData._id}`}>
                 <h3>{postData.title}</h3>
             </Link>
             {postData.date ? <p>Date: {new Date(postData.date).toDateString()}</p> : <p>No date provided</p>}
