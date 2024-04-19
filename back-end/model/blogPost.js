@@ -15,6 +15,14 @@ const blogPostSchema = new Schema({
         type: String,
         required: true
     },
+    likes: {
+        type: Number,
+        default: 0,
+    },
+    likedBy:{
+        type: [String],
+        default: []
+    }
 });
 
 const BlogPost = model("BlogPost", blogPostSchema);
