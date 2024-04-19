@@ -37,9 +37,10 @@ app.get("/posts/:id", async (req, res) => {
     const id = req.params.id
     const allPosts = await BlogPost.findById(id);
     return res.status(200).json(allPosts)
+})
 
 //Creating a fetch route to a specific post via its ID...
-app.get("/like:id", async (req, res) =>{
+app.put("/like/:id", async (req, res) =>{
   /**
    * req should be filled with an id, then the name for the person who 
    * wants to like the post
@@ -50,7 +51,9 @@ app.get("/like:id", async (req, res) =>{
   const likers = postToLike.likedBy
   const likes = postToLike.likes
 
-  if(!likers.contains(liker)){
+  console.log(likers)
+
+  if(!likers.includes(liker)){
     //if the post does not contain a like by the liker, then increment the likes and 
     //add the liker to the list of people who have liked the post
     console.log(liker + " has been added to the list of likers...");
@@ -58,10 +61,8 @@ app.get("/like:id", async (req, res) =>{
     //update the actual post
     await BlogPost.updateOne({id}, {
       likes: likes+1,
-      likers: [...likers, liker]
+      likedBy: [...likers, liker]
     });
-
-    return res.status(200).json();
 
   }else{
 
@@ -69,13 +70,14 @@ app.get("/like:id", async (req, res) =>{
 
     await BlogPost.updateOne({id}, {
       likes: likes-1,
-      likers: likers
+      likedBy: likers
     });
 
-    return res.status(200).json();
+   
     //if the person has already liked the post, decrement 
     //the like and take the liker out of the array...
   }
+  return res.status(200).json();
   
 })
 

@@ -18,7 +18,7 @@ const blogPostSchema = new Schema({
     date: {
         type: Date,
         required: true
-
+    },
     likes: {
         type: Number,
         default: 0,

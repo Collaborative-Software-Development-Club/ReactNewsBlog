@@ -1,19 +1,14 @@
 import React, { useState } from 'react'
+import toggleLike from "../../data/toggleLike"
 
-const LikeCount = ({ likeCount }) => {
-    console.log(likeCount)
-    const [isLiked, setLikes] = useState(false)
-
-    const toggleLike = () => {
-        setLikes((prev) => !prev)
-    }
+const LikeCount = ({ likes, user, id }) => {
 
     return (
         <div className='like-counter'>
-            <button className='like-Button' onClick={toggleLike}>
-                {isLiked ? 'unlike' : 'like'}
+            <button className='like-Button' onClick={() => toggleLike(id, user)}>
+                {false ? 'unlike' : 'like'}
             </button>
-            <p className='likes'>{isLiked ? likeCount + 1 : likeCount}</p>
+            <p className='likes'>{likes}</p>
         </div>
     )
 }
