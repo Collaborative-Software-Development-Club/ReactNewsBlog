@@ -10,11 +10,21 @@ function usePosts() {
         }
         getPosts()
     }, [])
+    posts.sort(sortPosts)
     return posts
 }
 
+function sortPosts(postA, postB){
+    if(postA.date && postB.date) {
+        return new Date(postB.date) - new Date(postA.date)
+    } else if(postA.date){
+        return -1
+    } else {
+        return 1
+    }
+}
+
 async function getPostsFromApi() {
-    //const url = 'https://jsonplaceholder.typicode.com/users
     try {
         const response = await fetch(POSTS_ROUTE)
         const data = await response.json()

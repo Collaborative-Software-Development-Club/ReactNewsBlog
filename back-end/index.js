@@ -13,18 +13,6 @@ const PORT = process.env.PORT;
 mongoose.connect(
 	`mongodb+srv://${username}:${password}@reactnewsblog.pku64lm.mongodb.net/?retryWrites=true&w=majority&appName=ReactNewsBlog`
 );
-console.log(username, password)
-/*
-const article = new BlogPost({
-	title: "SECOND POST!",
-	content: "This is the second post ever",
-});
-
-const firstArticle = await BlogPost.findOne({});
-console.log(firstArticle)
-
-//await article.save();
-*/
 
 const app = express(); //app is our express application.
 
@@ -43,6 +31,12 @@ app.get("/posts", async (req, res) => {
     const allPosts = await BlogPost.find();
     return res.status(200).json(allPosts)
 })
+
+
+app.get("/posts/:id", async (req, res) => {
+    const id = req.params.id
+    const allPosts = await BlogPost.findById(id);
+    return res.status(200).json(allPosts)
 
 //Creating a fetch route to a specific post via its ID...
 app.get("/like:id", async (req, res) =>{
@@ -82,12 +76,12 @@ app.get("/like:id", async (req, res) =>{
     //if the person has already liked the post, decrement 
     //the like and take the liker out of the array...
   }
-
+  
 })
 
 app.post("/posts", async (req, res) => {
     console.log("uploading this data: ", req.body)
-    const newPost = new BlogPost({ ...req.body });
+    const newPost = new BlogPost({ ...req.body, date: new Date() });
     const insertedPost = await newPost.save();
     return res.status(201).json(insertedPost);
 });

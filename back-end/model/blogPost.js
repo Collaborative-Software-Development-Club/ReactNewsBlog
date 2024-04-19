@@ -15,6 +15,10 @@ const blogPostSchema = new Schema({
         type: String,
         required: true
     },
+    date: {
+        type: Date,
+        required: true
+
     likes: {
         type: Number,
         default: 0,
