@@ -18,13 +18,18 @@ const blogPostSchema = new Schema({
     date: {
         type: Date,
         required: true
-
-    likes: {
-        type: Number,
-        default: 0,
     },
     likedBy:{
         type: [String],
+        default: []
+    },
+    comments: {
+        type: [{
+            content: String,
+            author: String,
+            date: Date,
+            likedBy: [String]
+        }],
         default: []
     }
 });

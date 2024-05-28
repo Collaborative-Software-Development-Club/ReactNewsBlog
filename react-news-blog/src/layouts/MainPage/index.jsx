@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import PostWriter from './PostWriter.jsx'
 import PostPreview from '../../components/PostPreview.jsx'
 
 import useUserData from '../../data/useUserData.js'
 import usePosts from '../../data/usePosts.js'
 
-const MainPage = ({ uploadPost }) => {
+const MainPage = () => {
     const user = useUserData()
 
     const posts = usePosts();
@@ -24,7 +24,7 @@ const MainPage = ({ uploadPost }) => {
                         ))}
                     </ul>
                 </div>
-                <PostWriter uploadPost={uploadPost} user={user} />
+                <PostWriter user={user} />
             </div>
         </>
     )

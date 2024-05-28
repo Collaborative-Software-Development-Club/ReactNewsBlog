@@ -1,26 +1,15 @@
 import React, { useState } from 'react'
-
-import getCurrentISODate from '../../helper-functions/getCurrentISODate'
+import uploadComment from '../../data/uploadComment'
 
 const COMMENT_LIMIT = 100
 
-const CommentWriter = ({ user, uploadComment, postId }) => {
+const CommentWriter = ({ user, postId }) => {
     const [comment, setComment] = useState('')
-    const commentLength = comment.length
-
-    const createCommentData = () => {
-        return {
-            author: user.name,
-            content: comment,
-            date: getCurrentISODate(),
-            post: postId,
-            likes: 0,
-        }
-    }
+    const commentLength = comment.length 
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        uploadComment(createCommentData())
+        uploadComment(user.name, comment, postId)
         setComment("")
     }
 

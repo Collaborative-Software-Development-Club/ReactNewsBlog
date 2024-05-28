@@ -1,19 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
+import useUserData from '../../data/useUserData'
 
-const LikeCount = ({ likeCount }) => {
-    console.log(likeCount)
-    const [isLiked, setLikes] = useState(false)
-
-    const toggleLike = () => {
-        setLikes((prev) => !prev)
-    }
+const LikeCount = ({ likedBy, updateLike}) => {
+    const user = useUserData()
+    const likeCount = likedBy.length
+    const isLiked = likedBy.includes(user.name)
 
     return (
         <div className='like-counter'>
-            <button className='like-Button' onClick={toggleLike}>
+            <button className='like-Button' onClick={updateLike}>
                 {isLiked ? 'unlike' : 'like'}
             </button>
-            <p className='likes'>{isLiked ? likeCount + 1 : likeCount}</p>
+            <p className='likes'>{likeCount}</p>
         </div>
     )
 }

@@ -15,6 +15,7 @@ function usePost(id){
 }
 
 async function getPostFromApi(id) {
+    console.log("getting posts from api")
     try {
         const response = await fetch(POST_ROUTE + id)
         const data = await response.json()

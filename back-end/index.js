@@ -1,90 +1,67 @@
-import mongoose from "mongoose";
 import {} from "dotenv/config";
 import express from "express";
-import cors from "cors"
+import cors from "cors";
+import MongoDBFacade from "./MongoDBFacade.js";
 
-import BlogPost from "./model/blogPost.js"; 
+import BlogPost from "./model/blogPost.js";
 //Imports the blog posts from the blog post schema.
 
 const username = process.env.USERNAME2;
 const password = process.env.PASSWORD;
 const PORT = process.env.PORT;
 
-mongoose.connect(
-	`mongodb+srv://${username}:${password}@reactnewsblog.pku64lm.mongodb.net/?retryWrites=true&w=majority&appName=ReactNewsBlog`
-);
-
 const app = express(); //app is our express application.
+const db = new MongoDBFacade(username, password);
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 
-app.get("/", async (req, res) => {
-	return res.json({ message: "Hello, World" });
-});
-
-app.get("/test", async (req, res) => {
-    return res.json({message: "test"})
-})
-
 app.get("/posts", async (req, res) => {
-    const allPosts = await BlogPost.find();
-    return res.status(200).json(allPosts)
-})
-
+	const allPosts = await db.getAllPosts();
+	return res.status(200).json(allPosts);
+});
 
 app.get("/posts/:id", async (req, res) => {
-    const id = req.params.id
-    const allPosts = await BlogPost.findById(id);
-    return res.status(200).json(allPosts)
+	const id = req.params.id;
+	const post = await db.getSinglePost(id);
+	return res.status(200).json(post);
+});
 
-//Creating a fetch route to a specific post via its ID...
-app.get("/like:id", async (req, res) =>{
-  /**
-   * req should be filled with an id, then the name for the person who 
-   * wants to like the post
-   */
-  const {id} = req.params; //get the id of the post of which 
-  const postToLike = await BlogPost.findById(id); //get the specific post to like.
-  const liker = req.body.liker
-  const likers = postToLike.likedBy
-  const likes = postToLike.likes
-
-  if(!likers.contains(liker)){
-    //if the post does not contain a like by the liker, then increment the likes and 
-    //add the liker to the list of people who have liked the post
-    console.log(liker + " has been added to the list of likers...");
-
-    //update the actual post
-    await BlogPost.updateOne({id}, {
-      likes: likes+1,
-      likers: [...likers, liker]
-    });
-
-    return res.status(200).json();
-
-  }else{
-
-    likers = likers.filter(liker => liker != liker)
-
-    await BlogPost.updateOne({id}, {
-      likes: likes-1,
-      likers: likers
-    });
-
-    return res.status(200).json();
-    //if the person has already liked the post, decrement 
-    //the like and take the liker out of the array...
-  }
-  
+app.get("/posts/author/:author", async (req, res) => {
+    const author = req.params.author
+    const posts = await db.getPostsFromAuthor(author)
+    return res.status(200).json(posts)
 })
 
-app.post("/posts", async (req, res) => {
-    console.log("uploading this data: ", req.body)
-    const newPost = new BlogPost({ ...req.body, date: new Date() });
-    const insertedPost = await newPost.save();
-    return res.status(201).json(insertedPost);
+// like a post with the specified id
+app.put("/like/:id", async (req, res) => {
+	const { id } = req.params;
+	const likerName = req.body.liker;
+	await db.updateLike(id, likerName);
+	const updatedPost = await db.getSinglePost(id);
+	return res.status(200).json(updatedPost.likedBy);
 });
+
+app.put("/comment/:id", async (req, res) => {
+	const { id } = req.params;
+	const commentAuthor = req.body.author;
+	const commentContent = req.body.content;
+	await db.addComment(id, commentAuthor, commentContent);
+	return res.status(200);
+});
+
+app.post("/posts", async (req, res) => {
+	const { body } = req;
+	const insertedPost = db.uploadPost(body.author, body.title, body.content);
+	return res.status(201).json(insertedPost);
+});
+
+app.put('/like/comment/:id', async (req, res) => {
+    console.log('updating like count on comment')
+	const { id } = req.params;
+    const {content, username} = req.body
+    db.updateCommentLike(id, username, content)
+})
 
 const start = async () => {
 	try {

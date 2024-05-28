@@ -1,9 +1,6 @@
 import React, { useRef } from 'react'
 import { useState } from 'react'
-
 import uploadPost from '../../data/uploadPost'
-
-import getCurrentISODate from '../../helper-functions/getCurrentISODate'
 
 const TITLE_LIMIT = 60
 

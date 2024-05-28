@@ -78,6 +78,8 @@ body {
     border-radius: 3px;
     border: 2px solid;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .like-Button {

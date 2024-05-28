@@ -7,28 +7,28 @@ import usePost from '../../data/usePost.js'
 import useUserData from '../../data/useUserData.js'
 import Comment from '../PostPage/Comment'
 
-const PostPage = ({ comments, uploadComment }) => {
+const PostPage = () => {
+    console.log('post page')
     const { id } = useParams()
     const postData = usePost(id)
+    console.log('postData', postData)
     const user = useUserData()
-
-    const postComments = comments.filter((comment) => comment.post === id)
 
     return (
         <div className="main-page-content">
             <div>
-                <BlogPost postData={postData} />
-                {postData && (
-                    <CommentWriter uploadComment={uploadComment} user={user} postId={postData.id} />
-                )}
+                {postData && <BlogPost postData={postData} />}
+                {postData && <CommentWriter user={user} postId={id} />}
             </div>
             <div>
                 <h2>Comments:</h2>
-                <ul className="scroll-feed">
-                    {postComments.map((comment) => (
-                        <Comment commentData={comment} />
-                    ))}
-                </ul>
+                {postData && (
+                    <ul className="scroll-feed">
+                        {postData.comments.map((comment) => (
+                            <Comment commentData={comment} postId={id}/>
+                        ))}
+                    </ul>
+                )}
             </div>
         </div>
     )
