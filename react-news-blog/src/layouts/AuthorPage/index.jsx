@@ -17,7 +17,7 @@ const AuthorPage = () => {
             {posts.length === 0 ? (
                 <p>No Post Found</p>
             ) : (
-                <ul className='blog-Post-Stream'>
+                <ul className='scroll-feed'> 
                     {posts.map((post) => (
                         <li>
                             <Link to={`../post/${post._id}`}>
