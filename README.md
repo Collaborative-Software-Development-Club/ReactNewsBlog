@@ -15,7 +15,7 @@ For the front-end:
   
 For the back-end:
 + JavaScript
-+ MongoDB with Mongoose
++ MongoDB (Atlas with Mongoose)
 + Express.js
 
 ## Contributors
