@@ -1,16 +1,20 @@
 # Welcome to the React News Blog Read Me!
 ## What is the React News Blog?
-Glad you asked! The React News Blog, led by Lorenzo, is a project that focuses on,
-you guessed it, using React! Though React is used as the main language in order to build this project,
-the data for the project is mainly stored with MongoDB so if you're interested in either of these topics 
-this is the perfect project to join! 
+The React News Blog, led by Lorenzo, is a project that focuses on using React to create a website that holds
+a multitude of posts! These posts are clickable and bring you to a page where you can comment and like the post as well. 
+Any comments/likes made on the post will be updated through a database stored on MongoDB from which any other users will
+be able to see the like/comment made.
 
-## What do you need to know to join? 
-The React News Blog is a web-based blog that allows the user
-to post any text they would like, along with the their title to a database (held in MongoDB). 
-From there, others may load up the website and see these posts updated in real-time from React! 
+## What is being used?
+The basic applications used for work on this project include:
++ Visual Studio Code
++ Git
++ MongoDB
+  
+### What do you need to know to join? 
+This project is beginner-friendly so anyone is free to join as long as they are
+interested!
 
-##What do you need to work on this project?
-This project is beginner-friendly! All you need is a desire to learn about React and MongoDB and
-you will be a perfect fit for this project! 
+
+
 
