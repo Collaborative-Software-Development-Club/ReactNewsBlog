@@ -1,7 +1,31 @@
-test# ReactNewsBlog
-test 2
-Here's a list of React components...
-https://react.dev/reference/react-dom/components/common#
+# Welcome to the React News Blog Read Me!
+## What is the React News Blog?
+The React News Blog is a full-stack project built using the MERN stack consisting of a website that holds
+a multitude of blog posts! These posts are clickable and bring you to a page where you can comment and like the post as well. 
+Any comments/likes made on the post will be updated through a RESTful API and stored on a database so that other users will
+be able to see the like/comment made.
 
-Here's the basic layout/idea for the blog webpage!
-![image](https://github.com/Collaborative-Software-Development-Club/ReactNewsBlog/assets/144289754/dc05b9f2-f7df-42bb-bced-c3f2b0bdd5ab)
+## What is being used?
+The basic technologies used for work on this project include:
+
+For the front-end:
++ JavaScript
++ React.js
++ CSS
+  
+For the back-end:
++ JavaScript
++ MongoDB (Atlas with Mongoose)
++ Express.js
+
+## Contributors
++ Project Lead: Lorenzo Mion
++ Engineers: Megumi Ito, Parker Haskett
+  
+## What do you need to know to join? 
+This project is beginner-friendly so anyone is free to join as long as they are
+interested!
+
+
+
+
